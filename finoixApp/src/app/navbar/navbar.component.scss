@@ -1,0 +1,72 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+input[type=search] {
+  background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 8px center;
+  border: solid 1px white;
+  padding: 9px 10px 9px 10px;
+  width: 15px;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-sizing: content-box;
+  // -webkit-appearance: textfield;
+  outline: none;
+  cursor: pointer;
+  z-index: 5;
+}
+#search input[type=search].filled
+{
+  width: 200px;
+  padding-left: 32px;
+  color: #4a83c0;
+  background-color: #fff;
+  cursor: auto;
+}
+.close
+{
+  z-index:5;
+  margin-left:-3rem;
+  margin-right:1rem;
+  margin-top: 0.5rem;
+}
+input[type=search]:focus {
+  width: 200px;
+  background-color: white;
+  border-color: #66CC75;
+  padding-left: 32px;
+  cursor: auto;
+  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+a,
+a:visited,
+a:hover {
+  color: black;
+  // color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}
+
+.bg {
+  width: 100%;
+  height: auto;
+}

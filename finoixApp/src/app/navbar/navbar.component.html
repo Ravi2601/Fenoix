@@ -1,0 +1,63 @@
+
+<nav class="navbar navbar-expand-lg toolbar">
+  <mat-icon>reorder</mat-icon>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <mat-icon>reorder</mat-icon>
+  </button>
+  <!-- <span class="mt-1" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>reorder</mat-icon>
+  </span>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>voicemail</mat-icon>
+      <span>Check voice mail</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu> -->
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <!-- <a class="navbar-brand ml-1" href="#">COLLECTION</a> -->
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">COLLECTION <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PREMIUM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MORE</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+    <form id="search">
+      <input #search type="search" [placeholder]="filled?'Search':''" [ngClass]="{'filled':filled}"
+           (click)="filled=!filled" (blur)="filled=search.value?true:false">
+           <button class="close" *ngIf="filled" (click)="search.value='';filled=false">X</button>
+    </form>
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">LOGIN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">HELP</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="bg mt-3">
+  <img src="assets\images\33.jpg" width="100%" height="auto">
+</div>
